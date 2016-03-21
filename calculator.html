@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Simple Calculator Web Application">
+	<link rel="stylesheet" href="calculatorStyles.css">
+	<script src="calculatorScript.js"></script>
+</head>
+<body>
+
+	<h1>Calculator</h1>
+	
+	<div id="calcBody">
+		<form method="get">
+			<input type="text" id="display"/>
+		</form>
+		
+		<form method="get" id ="buttons">
+			<input type="button" value="7" onclick="show(7)" />
+			<input type="button" value="8" onclick="show(8)" />
+			<input type="button" value="9" onclick="show(9)" />
+			<input type="button" value="/" onclick="operator('/')" />
+			<br />
+			
+			<input type="button" value="4" onclick="show(4)" />
+			<input type="button" value="5" onclick="show(5)" />
+			<input type="button" value="6" onclick="show(6)" />
+			<input type="button" value="*" onclick="operator('*')" />
+			<br />
+			
+			<input type="button" value="1" onclick="show(1)" />
+			<input type="button" value="2" onclick="show(2)" />
+			<input type="button" value="3" onclick="show(3)" />
+			<input type="button" value="-" onclick="operator('-')" />
+			<br />
+			
+			<input type="button" value="." onclick="show('.')" />
+			<input type="button" value="0" onclick="show(0)" />
+			<input type="button" value="=" onclick="equals()" />
+			<input type="button" value="+" onclick="operator('+')" />
+		</form>	
+	</div>	
+
+</body>
+</html>
