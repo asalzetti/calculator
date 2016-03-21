@@ -1,10 +1,10 @@
-var val = "";
+var currval = "";
 var oper = "";
 var firstval = "";
 			
 function show(num) {
-	val += num;
-	display(val);
+	currval += num;
+	display(currval);
 }
 			
 function display(num) {
@@ -17,18 +17,18 @@ function operator(op) {
 		equals();
 	}
 	oper = op;	
-	firstval = val;
-	val = "";
+	firstval = currval;
+	currval = "";
 }
 			
 function equals() {
 	if(firstval !== ""){
-		var endval = eqsign(Number(firstval), Number(val), oper);
-		val = endval;
+		var endval = eqsign(Number(firstval), Number(currval), oper);
+		currval = endval;
 	}
 	oper = "";
 	firstval = "";
-	display(val);
+	display(currval);
 }
 			
 function eqsign(num1, num2, op) {
